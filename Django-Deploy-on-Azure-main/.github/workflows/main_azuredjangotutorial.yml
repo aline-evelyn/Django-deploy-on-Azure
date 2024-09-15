@@ -61,6 +61,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'azuredjangotutorial'
+          app-name: 'NNTradesDjango'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C29BCA7C0EF444F5857A76114D27B266 }}
