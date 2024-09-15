@@ -9,7 +9,7 @@ def main():
     settings_module = 'azure_project.deployment' if 'WEBSITE_HOSTNAME' in os.environ else 'azure_project.settings'
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', settings_module)
     try:
-        from django.core.management import execute_from_command_line
+        from django.core.management import execute_from_command_line # type: ignore
     except ImportError as exc:
         raise ImportError(
             "Couldn't import Django. Are you sure it's installed and "
